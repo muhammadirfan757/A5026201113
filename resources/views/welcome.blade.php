@@ -90,10 +90,10 @@
                     <a href="mirfancss.html">Tugas 2</a>
                     <a href="mirfanspinners.html">Tugas 3</a>
                     <a href="irfanbukalapak.html">Praktikum 1</a>
-                    <a href="jquery">Tugas 4</a>
-                    <a href="irfanbukalapak.html">Praktikum 2</a>
-                    <a href="uts">UTS</a>
-                    <a href="isiannama">Tugas PHP</a>
+                    <a href="mirfanjquery">Tugas 4</a>
+                    <a href="mirfanpraktikum2">Praktikum 2</a>
+                    <a href="mirfanuts">UTS</a>
+                    <a href="mirfanphp">Tugas PHP</a>
                 </div>
             </div>
         </div>

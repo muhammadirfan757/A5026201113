@@ -17,6 +17,12 @@ class ViewController extends Controller
         //code untuk meload data yg akan dimuat di form
         return view('tugas');
     }
+    function showuts(){
+        return view('uts');
+    }
+    function showphp(){
+        return view('tugasphp');
+    }
 
 }
 

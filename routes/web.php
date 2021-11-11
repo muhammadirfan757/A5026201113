@@ -14,13 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('jquery', function () {
-    return view('mirfanjquery');
-});
-Route::get('uts', function () {
-    return view('mirfanuts');
+
+Route::get('mirfanjquery', function () {
+    return view('jquery');
 });
 
-Route::get('isiannama',"ViewController@showForm") ;
-Route::post('greetings',"ViewController@resultGreetings");
+Route::get('mirfanpraktikum2', function () {
+    return view('praktikum2');
+});
+
+
+
+// Route::get('isiannama',"ViewController@showForm") ;
+// Route::post('greetings',"ViewController@resultGreetings");
+
+
+//uts
+Route::get('mirfanuts',"ViewController@showuts");
+//php
+Route::get('mirfanphp',"ViewController@showphp");
 
