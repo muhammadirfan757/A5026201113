@@ -1,0 +1,25 @@
+body{
+    background-color: #ff500f;
+}
+
+.container {
+    text-align: center;
+}
+
+.container{
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 200px;
+}
+
+p {
+    padding-top: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 600;
+}

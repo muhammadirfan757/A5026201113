@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Irfan Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+
+
+    <!-- Mohon maaf Pak, ingin mengatakan kalau file kemarin yang saya kirimkan 
+        sudah terdapat cssnya karena saya kira tidak apa2 memakai file css -->
+
+        
+
+    <style>
+
+        * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0px;
+        color: rgb(60, 60, 60);
+        }
+
+        body {
+        margin: 20;
+        padding: 40px;
+        font-family: Qaligo;
+        background-color: #EEEEEE;
+        }
+
+        .wrapper {
+        width: 1100px;
+        margin: auto;
+        position: relative;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            float: left;
+            font-family: Qaligo;
+            color: #000;
+        }
+
+        .menu {
+            float: right;
+        }
+
+        nav{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            background: #fff;
+            z-index: 1;
+            border-bottom: 1px solid rgb(60, 60, 60);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            color: rgb(60, 60, 60);
+            font-weight: bold;
+            font-size: 10px;
+            letter-spacing: 3px;
+            padding: 0px 16px 0px 16px;
+            text-align: center;
+            text-decoration: none;
+            /* transition: all .3s ease; */
+        }
+
+        nav ul li a hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .desksingkat {
+            margin-top: 200px;
+            margin-bottom: 0px;
+            margin-left: 50px;
+            line-height: 80px;
+        }
+
+        .desksingkat  h1{
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            font-family: Qaligo;
+            color: rgb(60, 60, 60);
+        }
+
+        .desksingkat .deskripsi {
+            font-family: Qaligo;
+            font-weight: 800;
+            font-size:14px;
+            letter-spacing: 3px;
+            word-spacing: 20px;
+            margin-bottom: 80px;
+            color: rgb(60, 60, 60);
+            width: 100%;
+            line-height: 30px;
+        }
+
+
+        a.tombol {
+            background-color: rgb(60, 60, 60) ;
+            border-radius: 10px;
+            margin-top: 40px;
+            padding:  10px 20px 10px 20px;
+            color: #fff;
+            cursor:pointer;
+            font-weight: bold;
+        }
+
+
+        a.tombol:hover{
+            background: #fff;
+            text-decoration: none;
+            color: rgb(60, 60, 60);
+            border-style: solid;
+            border-color: rgb(60, 60, 60);
+        }
+
+        .tanggallahir, .institut, .fakultas {
+            /* position:relative; */
+            text-align: center;
+            margin: 40px;
+            display: inline-table;
+            float: left;
+        }
+
+        .profil p{
+            font-size: 12px;
+        }
+
+        .profil h3{
+            font-size: 18px;
+        }
+
+        .tengah {
+            text-align: center;
+            width: 100%;
+            line-height: 100px;
+        }
+
+        .about-list{
+            width: 100%;
+            position:relative;
+            display:block;
+            flex-wrap: wrap;
+            line-height: 80px;
+            font-size: 16px;
+        }
+
+        .hobi p{
+            font-family: Qaligo;
+            font-weight:800;
+            font-size: 16px;
+            text-align: center;
+            color: rgb(60, 60, 60);
+            line-height: 100px;
+        }
+
+        .makanan p{
+            font-family: Qaligo;
+            font-weight: 800;
+            font-size: 16px;
+            text-align: center;
+            color: rgb(60, 60, 60);
+            line-height: 100px;
+        }
+
+        .map p{
+            font-family: Qaligo;
+            font-weight: 800;
+            font-size: 16px;
+            text-align: center;
+            color: rgb(60, 60, 60);
+            line-height: 100px;
+        }
+
+        ::-webkit-scrollbar-track
+                {
+                    background-color: #fff;
+                    border-radius: 10px;
+
+                }
+
+                ::-webkit-scrollbar
+                {
+                    width: 10px;
+                    background-color: transparent;
+                }
+
+                ::-webkit-scrollbar-thumb
+                {
+                    background-color: rgb(60, 60, 60);
+                }
+
+        @font-face {
+            font-family: Qaligo;
+            src: url('Qaligo Regular - Demo.otf');
+        }
+    </style>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href =''>Profil Irfan</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <section id = "home">
+            <img src="foto.png" alt="foto" height="712" width="402">
+            <div class="desksingkat">
+                <h1>Halo aku Muhammad Irfan</h1>
+                <p class ="deskripsi">Aku mahasiswa Sistem Informasi ITS</p>
+                <p><a href="#about" class ="tombol">Kenali Lebih Lanjut</a></p>
+                <br>
+                <hr>
+
+                <div class ="profil">
+                    <div class="tanggallahir">
+                        <h3>Okt</h3>
+                        <p>Tanggal Lahir</p>
+                    </div>
+    
+                    <div class="institut">
+                        <h3>ITS</h3>
+                        <p>Institut</p>
+                    </div>
+    
+                    <div class="fakultas">
+                        <h3>FTEIC</h3>
+                        <p>Fakultas</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <div class = "tengah">
+                <div class = "isi">
+                <h2>About Me</h2>
+                <br>
+                </div>
+
+                <div class ="about-list">
+                    <div class="hobi">
+                        <h2>Hobi</h2>
+                        <img src="basket.png">
+                        <p>Main Basket</p>
+                        <hr>
+                        <br>
+                    </div>
+    
+                    <div class="makanan">
+                        <h2>Makanan Favorit</h2> 
+                        <img src="ramen.png">
+                        <p>Ramen</p>
+                        <hr>
+                        <br>
+                    </div>
+    
+                    <div class="map">
+                        <h2>Tempat Tinggal</h2>
+                        <img src="lokasi.png">
+                        <p>Bekasi</p>
+                    </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+
+
+</html> 
+
+

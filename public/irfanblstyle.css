@@ -1,0 +1,83 @@
+.body{
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 40px 90px 40px 90px;
+}
+
+
+
+
+/* .row review{
+    font-family: sans-serif;
+    font-size: 22px;
+} */
+
+.heading h1{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.price h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.stok p{
+    font-size: 18px;
+}
+
+.col img{
+    border-radius: 5px;
+}
+
+
+.row pengiriman{
+    font-weight: bold;
+}
+.row h6{
+    font-weight:200;
+}
+.pengiriman h6{
+    font-weight: bold;
+}
+
+#alamatbtn{
+    text-decoration: underline;
+    text-decoration-style: dotted ;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* #alamatbtn:focus{
+    box-shadow: none;
+    background: transparent;
+} */
+
+#chatbtn,#keranjangbtn{
+    color: black !important;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-right: 5px;
+    background-color: white;
+}
+
+#belibtn{
+    color: white !important;
+    background-color: #ec0e49;
+    border-radius: 5px ;
+    padding-left: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
