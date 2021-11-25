@@ -26,6 +26,8 @@ class PegawaiController extends Controller
         // memanggil view tambah
         return view('pegawai.tambah');
     }
+
+
     // method untuk insert data ke table pegawai
 public function store(Request $request)
 {
@@ -40,6 +42,8 @@ public function store(Request $request)
 	return redirect('/pegawai'); //tidak return view, karena jadi tidak flexible
 
 }
+
+
 // method untuk edit data pegawai
 public function edit($id)
 {

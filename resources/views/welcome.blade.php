@@ -94,6 +94,9 @@
                     <a href="mirfanpraktikum2">Praktikum 2</a>
                     <a href="mirfanuts">UTS</a>
                     <a href="mirfanphp">Tugas PHP</a>
+                    <br>
+                    <a href="pegawai">Tugas Query (Pegawai)</a>
+                    <a href="pendapatan">Tugas Query Builder</a>
                 </div>
             </div>
         </div>
