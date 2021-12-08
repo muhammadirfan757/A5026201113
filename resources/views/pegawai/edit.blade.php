@@ -30,7 +30,7 @@
 </html> --}}
 
 
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -38,7 +38,9 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body> --}}
+    @extends('layout.bahagia')
+@section('content')
     <div class="container my-5">
 
 
@@ -94,6 +96,6 @@
             </form>
         @endforeach
     </div>
-</body>
+@endsection
 
 </html>
