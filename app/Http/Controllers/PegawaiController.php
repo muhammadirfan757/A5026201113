@@ -36,7 +36,7 @@ public function store(Request $request)
 		'pegawai_nama' => $request->nama,
 		'pegawai_jabatan' => $request->jabatan,
 		'pegawai_umur' => $request->umur,
-		'pegawai_alamat' => $request->alamat
+		'pegawai_alamat' => $request->alamat,
 	]);
 	// alihkan halaman ke halaman pegawai
 	return redirect('/pegawai'); //tidak return view, karena jadi tidak flexible

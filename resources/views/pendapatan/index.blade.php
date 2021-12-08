@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
-
-	<h2>www.malasngoding.com</h2>
-	<h3>Data Pegawai</h3>
+@extends('layout.bahagia')
+@section('content')
+<div class="container">
+	<h1>Data Pendapatan</h1>
 
 	<a href="/pendapatan/tambah"> + Tambah Pendapatan Baru</a>
 
-	<br/>
-	<br/>
 
-	<table border="1">
+	<table border="1" class="table table-striped">
+        <thead
 		<tr>
-			<th>ID</th>
-			<th>IDPegawai</th>
-			<th>Bulan</th>
-			<th>Tuhan</th>
-			<th>Gaji</th>
-            <th>Tunjangan</th>
+			<th scope="col">ID</th>
+			<th scope="col">IDPegawai</th>
+			<th scope="col">Bulan</th>
+			<th scope="col">Tuhan</th>
+			<th scope="col">Gaji</th>
+            <th scope="col">Tunjangan</th>
+            <th scope="col">Opsi</th>
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
@@ -36,9 +31,10 @@
 				<a href="/pendapatan/hapus/{{ $p->ID }}">Hapus</a>
 			</td>
 		</tr>
+        </thead>
 		@endforeach
 	</table>
 
+</div>
+@endsection
 
-</body>
-</html>
