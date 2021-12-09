@@ -80,6 +80,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-size:x-large;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
@@ -89,7 +90,12 @@ p {
   margin-bottom: 1rem;
 }
 
-
+input{
+    align-items: center;
+}
+.btn{
+    align-items: right;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -9808,7 +9814,7 @@ a:focus {
 }
 
 #wrapper #content-wrapper #content {
-  flex: 1 0 auto;
+  flex:  auto;
 }
 
 .container,

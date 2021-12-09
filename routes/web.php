@@ -58,7 +58,7 @@ Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
 
 Route::get('/absen','AbsenController@indexabsen');
 Route::get('/absen/add','AbsenController@add');
-Route::post('/absen/store','PendapatanController@store');
+Route::post('/absen/store','AbsenController@store');
 
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');

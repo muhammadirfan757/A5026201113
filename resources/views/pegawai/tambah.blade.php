@@ -8,13 +8,16 @@
     @section('content')
 <div class="container my-5">
 
+<div class="container">
+    <div class="col">
+        <h3 class="text-center">Data Pegawai</h3>
+        <a class="btn btn-warning my-5" href="/pegawai">Kembali</a>
+    </div>
+</div>
+<br>
+	{{-- <h3 class="text-center">Data Pegawai</h3>
 
-	<h3 class="text-center">Data Pegawai</h3>
-
-	<a class="btn btn-default" href="/pegawai">Kembali</a>
-
-	<br/>
-	<br/>
+	<a class="btn btn-default" href="/pegawai">Kembali</a> --}}
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}

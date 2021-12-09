@@ -6,9 +6,6 @@
 
 	<a href="/absen/add"> + Tambah Absensi</a>
 
-	<br/>
-	<br/>
-
 	<table border="1"  class="table table-striped">
         <thead>
 		<tr>

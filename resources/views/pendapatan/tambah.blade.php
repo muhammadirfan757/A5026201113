@@ -34,19 +34,16 @@
     @extends('layout.bahagia')
     @section('content')
 <div class="container my-5">
-
-
-	<h3 class="text-center">Data Pendapatan</h3>
-
-	<a class="btn btn-default" href="/pegawai">Kembali</a>
-
-	<br/>
-	<br/>
-
-	<form action="/pendapatan/store" method="post">
+    <div class="container">
+        <div class="col">
+            <h3 class="text-center">Data Pendapatan</h3>
+            <a class="btn btn-warning my-5" href="/pegawai">Kembali</a>
+        </div>
+    </div>
+	<form  action="/pendapatan/store" method="post">
 		{{ csrf_field() }}
 
-        <div class="form-group row">
+        <div class="form-group row " >
             <label for="IDPegawai" class="col-sm-2 col-form-label">ID Pegawai</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="IDPegawai" name="IDPegawai" required="required" placeholder="Masukkan IDPegawai">
@@ -54,7 +51,7 @@
           </div>
 
         <div class="form-group row">
-            <label for="Jabatan" class="col-sm-2 col-form-label">Bulan</label>
+            <label for="Bulan" class="col-sm-2 col-form-label">Bulan</label>
             <div class="col-sm-10">
               <input type="number" pattern="[1-12]*" class="form-control" id="Bulan" name="Bulan" required="required" placeholder="Masukkan bulan">
             </div>
@@ -81,7 +78,7 @@
             </div>
           </div>
 
-		<input  type="submit" value="Simpan Data">
+          <input class="btn btn-primary"  type="submit" value="Simpan Data">
 	</form>
 </div>
 @endsection

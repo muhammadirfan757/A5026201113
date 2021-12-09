@@ -13,13 +13,10 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"  rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!-- Custom styles for this template-->
-    <link href="css/stylenew.css" rel="stylesheet">
+    <link href="{{asset('css/stylenew.css')}}" rel="stylesheet">
 
 </head>
 
@@ -47,19 +44,19 @@
 
             <!-- Nav Item - Pegawai -->
             <li class="nav-item active">
-                <a class="nav-link" href="pegawai">
+                <a class="nav-link" href="/pegawai">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Pegawai</span></a>
 
                 <!-- Nav Item - Absen -->
             <li class="nav-item active">
-                <a class="nav-link" href="absen">
+                <a class="nav-link" href="/absen">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Absen</span></a>
 
                 <!-- Nav Item - Pendapatan -->
             <li class="nav-item active">
-                <a class="nav-link" href="pendapatan">
+                <a class="nav-link" href="/pendapatan">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Pendapatan</span></a>
 
@@ -79,32 +76,27 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-
-
-
-
         </ul>
         <!-- End of Sidebar -->
-        <ul class="navbar ">
-            <li class="nav-item dropdown no-arrow">
+
+
+        <ul class="navbar">
+            <li class="nav text-center">
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">5026201113 - Muhammad Irfan</span>
-                        <img class="img-profile rounded-circle" src="img/fotoprofile.png">
-                    </a>
+                        <img class="img-profile rounded-circle" width="50px" src="{{asset('fotoprofile.png')}}">
                 </nav>
-
-
             </li>
 
+           <div class="container">
             @yield('content')
+               </div>
             <!-- Footer -->
-            <div class="container">
-                <footer class="sticky-footer bg-white">
-                    <div class=" text-right">
+            <div class="container" >
+                <footer class="sticky-footer bg-white" >
+                    <div class="copyright">
                         <div class="text-center">
-                            <span class="text-center">Hak Cipta oleh 5026201113 - Muhammad Irfan</span>
+                            <span class="text-center">Hak Cipta oleh © 5026201113 - Muhammad Irfan</span>
                         </div>
                     </div>
                 </footer>
