@@ -23,7 +23,7 @@
                              <label>:</label>
                          </td>
                          <td>
-                             <select name="IDPegawai">
+                             <select name="idpegawai" id="idpegawai">
                                  @foreach ($pegawai as $p)
                                      <option value="{{ $p->pegawai_id }}">{{ $p->pegawai_nama }}</option>
                                  @endforeach
