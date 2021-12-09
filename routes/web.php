@@ -44,6 +44,10 @@ Route::post('/pegawai/update','PegawaiController@update');
 
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 
+Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/view/{id}','PegawaiController@detail');
+
+
 //Tugas Query Builder (25 Nov 2021)
 Route::get('/pendapatan','PendapatanController@index');
 Route::get('/pendapatan/tambah','PendapatanController@tambah');
@@ -64,4 +68,3 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
-

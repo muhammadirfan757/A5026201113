@@ -10,7 +10,7 @@
         <thead>
 		<tr>
 
-			<th scope="col">IDPegawai</th>
+			<th scope="col">Nama Pegawai</th>
 			<th scope="col">Tanggal</th>
 			<th scope="col">Status</th>
 			<th scope="col">Opsi</th>
@@ -18,7 +18,7 @@
 		@foreach($absen as $a)
 		<tr>
 
-			<td>{{ $a->IDPegawai }}</td>
+			<td>{{ $a->pegawai_nama}}</td>
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
@@ -30,6 +30,7 @@
         </thead>
 		@endforeach
 	</table>
+    {{ $absen->links()}}
     <p>
         Keterangan Status: <br>
         I : Izin <br>
