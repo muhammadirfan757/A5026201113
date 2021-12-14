@@ -40,7 +40,7 @@
 			<td >{{ $p->pegawai_nama }}</td>
 			{{-- <td >{{ $p->pegawai_jabatan }}</td>
 			<td >{{ $p->pegawai_umur }}</td> --}}
-			<td  >{{ $p->pegawai_alamat}}</td>
+			{{-- <td  >{{ $p->pegawai_alamat}}</td> --}}
 			<td class="isi-tabel">
 				<a href="/pegawai/view/{{ $p->pegawai_id }}">View Detail</a>
                 |

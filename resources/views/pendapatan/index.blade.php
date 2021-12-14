@@ -12,7 +12,7 @@
         </div>
         <div class="container" align="center">
             <form class="col-6" action="/pendapatan/cari" method="GET">
-                <input type="text" class="form-control mb-3" name="cari" placeholder="Cari Pendapatan Pegawai berdasarkan nama atau gaji ..." value="{{ old('cari') }}">
+                <input type="text" class="form-control mb-3" name="cari" placeholder="Cari Pendapatan Pegawai berdasarkan nama ..." value="{{ old('cari') }}">
                 <input type="submit" class="btn btn-primary mb-3" value="CARI">
             </form>
         </div>

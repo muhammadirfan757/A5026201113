@@ -22,23 +22,23 @@ class PendapatanController extends Controller
     	return view('pendapatan.index',['pendapatan' => $pendapatan]);
 
     }
+
     public function cari(Request $request)
 	{
 		// menangkap data pencarian
 		$cari = $request->cari;
 
     		// mengambil data dari table pegawai sesuai pencarian data
-		$pegawai = DB::table('pendapatan')
+		$pendapatan = DB::table('pendapatan')
         ->join('pegawai', 'pendapatan.IDPegawai', '=', 'pegawai.pegawai_id')
         ->select('pendapatan.*', 'pegawai.pegawai_nama')
-		->where('pegawai_nama','like',"%".$cari."%")
+        ->where('pegawai_nama','like',"%".$cari."%")
 		->paginate();
 
     		// mengirim data pegawai ke view index
-		return view('pegawai.index',['pegawai' => $pegawai]);
+		return view('pendapatan.index',['pendapatan' => $pendapatan]);
 
 	}
-
     // method untuk menampilkan view form tambah pendapatan
     public function tambah()
 {
