@@ -66,15 +66,10 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Pendapatan</span></a>
 
-                <!-- Nav Item - Minggu depan -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Minggu depan</span></a>
 
                 <!-- Nav Item - Praktikum -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/praktikum">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Praktikum</span></a>
             </li>
@@ -124,11 +119,11 @@
             </footer> --}}
 
     <!-- End of Footer -->
-    </div>
-    </div>
+    {{-- </div>
+    </div> --}}
     <!-- End of Content Wrapper -->
-
-    </div>
+{{--
+    </div> --}}
 
 
     <!-- Bootstrap core JavaScript-->

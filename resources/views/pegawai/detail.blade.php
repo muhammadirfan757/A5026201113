@@ -39,19 +39,24 @@
 </head>
 
 <body> --}}
-    @extends('layout.bahagia')
+@extends('layout.bahagia')
 @section('content')
     <div class="container my-5">
 
+        <div class="col-12">
+            <h3 class="text-center"> View Detail Pegawai</h3>
+        </div>
+        <br>
+        <div class="col-5">
 
-        <h3 class="text-center"> View DetailPegawai</h3>
+            <a class="btn btn-warning mr-5" href="/pegawai">Kembali</a>
+        </div>
 
-        <a class="btn btn-default" href="/pegawai">Kembali</a>
-
-        <br />
-        <br />
-        @foreach ($pegawai as $p)
-            {{-- <form action="/pegawai/update" method="post"> --}}
+        <div class="container">
+            <br />
+            <br />
+            @foreach ($pegawai as $p)
+                {{-- <form action="/pegawai/update" method="post"> --}}
                 {{-- <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/> --}}
                 <div class="form-group row">
                     <label for="nama" class="col col-form-label">Nama</label>
@@ -88,9 +93,7 @@
                 </div>
                 {{-- Alamat <textarea name="alamat" required="required"></textarea> <br/> --}}
 
-            {{-- </form> --}}
-        @endforeach
-    </div>
-@endsection
-
-</html>
+                {{-- </form> --}}
+            @endforeach
+        </div>
+    @endsection

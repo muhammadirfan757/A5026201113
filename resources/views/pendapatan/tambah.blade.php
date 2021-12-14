@@ -44,35 +44,35 @@
 		{{ csrf_field() }}
 
         <div class="form-group row " >
-            <label for="IDPegawai" class="col-sm-2 col-form-label">ID Pegawai</label>
+            <label for="IDPegawai" class="col-4 col-form-label">ID Pegawai</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="IDPegawai" name="IDPegawai" required="required" placeholder="Masukkan IDPegawai">
             </div>
           </div>
 
         <div class="form-group row">
-            <label for="Bulan" class="col-sm-2 col-form-label">Bulan</label>
+            <label for="Bulan" class="col-3 col-form-label">Bulan</label>
             <div class="col-sm-10">
-              <input type="number" pattern="[1-12]*" class="form-control" id="Bulan" name="Bulan" required="required" placeholder="Masukkan bulan">
+              <input type="text" pattern="[1-12]*" maxlength="2" class="form-control" id="Bulan" name="Bulan" required="required" placeholder="Masukkan bulan">
             </div>
           </div>
 
         <div class="form-group row">
-            <label for="Tahun" class="col-sm-2 col-form-label">Tahun</label>
+            <label for="Tahun" class="col-3 col-form-label">Tahun</label>
             <div class="col-sm-10">
               <input type="text" maxlength="4" class="form-control" id="Tahun" name="Tahun" required="required" placeholder="Masukkan tahun">
             </div>
           </div>
 
         <div class="form-group row">
-            <label for="Gaji" class="col-sm-2 col-form-label">Gaji</label>
+            <label for="Gaji" class="col-3 col-form-label">Gaji</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="Gaji" name="Gaji" required="required" placeholder="Masukkan gaji">
             </div>
           </div>
 
         <div class="form-group row">
-            <label for="Tunjangan" class="col-sm-2 col-form-label">Tunjangan</label>
+            <label for="Tunjangan" class="col-3 col-form-label">Tunjangan</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="Tunjangan" name="Tunjangan" required="required" placeholder="Masukkan tunjangan">
             </div>
@@ -82,7 +82,7 @@
 	</form>
 </div>
 @endsection
-</html>
+
 
 
 

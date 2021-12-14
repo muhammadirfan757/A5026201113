@@ -1,18 +1,27 @@
 @extends('layout.bahagia')
 
-@section('title', 'Menambah Absen')
+@section('title', 'Tabel Pegawai')
 @section('judulhalaman', 'Menambah Data Absen')
 
 @section('content')
 <div class="container">
-	<h1 align="center">Data Pegawai</h1>
+    <div class="col">
+        <h1 style="text-align: center">Data Pegawai</h1>
+        <br>
+        <div class="container">
+            <a  href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+        </div>
+        <br>
 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+    </div>
+	{{-- <h1 align="center">Data Pegawai</h1>
+
+	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a> --}}
 
     <div class="container" align="center">
-        <form action="/pegawai/cari" method="GET">
-            <input type="text" class="form-control" name="cari" placeholder="Cari Pegawai berdasarkan nama atau alamat .." value="{{ old('cari') }}">
-            <input type="submit" class="btn btn-default" value="CARI">
+        <form class="col-6" action="/pegawai/cari" method="GET">
+            <input type="text" class="form-control mb-3" name="cari" placeholder="Cari Pegawai berdasarkan nama atau alamat .." value="{{ old('cari') }}">
+            <input type="submit" class="btn btn-primary mb-3" value="CARI">
         </form>
     </div>
 
@@ -31,7 +40,7 @@
 			<td >{{ $p->pegawai_nama }}</td>
 			{{-- <td >{{ $p->pegawai_jabatan }}</td>
 			<td >{{ $p->pegawai_umur }}</td> --}}
-			<td  >{{ $p->pegawai_alamat }}</td>
+			<td  >{{ $p->pegawai_alamat}}</td>
 			<td class="isi-tabel">
 				<a href="/pegawai/view/{{ $p->pegawai_id }}">View Detail</a>
                 |

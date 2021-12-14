@@ -97,7 +97,7 @@
                     <br>
                     <a href="pegawai">Tugas Query (Pegawai)</a>
                     <a href="pendapatan">Tugas Query Builder</a>
-                    <a href="pegawai">Tugas 2 Desember</a>
+                    <a href="absen">Absen</a>
                 </div>
             </div>
         </div>

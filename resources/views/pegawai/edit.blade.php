@@ -43,19 +43,18 @@
 @section('content')
     <div class="container my-5">
 
-
-        <h3 class="text-center">Edit Pegawai</h3>
-
-        <a class="btn btn-default" href="/pegawai">Kembali</a>
-
-        <br />
-        <br />
+        <div class="container">
+            <div class="col mx-0">
+                <h3 class="text-center">Edit Pegawai</h3>
+                <a class="btn btn-warning my-5" href="/pegawai">Kembali</a>
+            </div>
+        </div>
         @foreach ($pegawai as $p)
             <form action="/pegawai/update" method="post">
                 {{ csrf_field() }}
                 {{-- <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/> --}}
                 <div class="form-group row">
-                    <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                    <label for="nama" class="col col-form-label">Nama</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="nama" name="nama" required="required"
                             placeholder="Masukkan nama" value="{{ $p->pegawai_nama }}">
@@ -65,7 +64,7 @@
                 {{-- Nama <input type="text" name="nama" required="required"> <br/> --}}
 
                 <div class="form-group row">
-                    <label for="jabatan" class="col-sm-2 col-form-label">Jabatan</label>
+                    <label for="jabatan" class="col col-form-label">Jabatan</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="jabatan" name="jabatan" required="required"
                             placeholder="Masukkan jabatan yang diduduki" value="{{ $p->pegawai_jabatan }}">
@@ -75,7 +74,7 @@
                 {{-- Jabatan <input type="text" name="jabatan" required="required"> <br/> --}}
 
                 <div class="form-group row">
-                    <label for="umur" class="col-sm-2 col-form-label">Umur</label>
+                    <label for="umur" class="col col-form-label">Umur</label>
                     <div class="col-sm-10">
                         <input type="number" class="form-control" id="umur" name="umur" required="required"
                             placeholder="Masukkan umur saat ini" value="{{ $p->pegawai_umur }}">
@@ -84,7 +83,7 @@
 
                 {{-- Umur <input type="number" name="umur" required="required"> <br/> --}}
                 <div class="form-group row">
-                    <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                    <label for="alamat" class="col col-form-label">Alamat</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" id="alamat" name="alamat" required="required"
                             placeholder="Masukkan alamat rumah saat ini">{{ $p->pegawai_alamat }}</textarea>
@@ -98,4 +97,3 @@
     </div>
 @endsection
 
-</html>

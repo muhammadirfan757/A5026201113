@@ -58,6 +58,9 @@ Route::post('/pendapatan/update','PendapatanController@update');
 
 Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
 
+Route::get('/pendapatan/cari','PendapatanController@cari');
+Route::get('/pendapatan/view/{id}','PendapatanController@detail');
+
 
 
 Route::get('/absen','AbsenController@indexabsen');
@@ -68,3 +71,19 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+Route::get('/absen/cari','AbsenController@cari');
+Route::get('/absen/view/{id}','AbsenController@detail');
+
+
+Route::get('/praktikum','PraktikumController@index');
+Route::get('/praktikum/tambah','PraktikumController@tambah');
+Route::post('/praktikum/store','PraktikumController@store');
+
+Route::get('/praktikum/edit/{id}','PraktikumController@edit');
+Route::post('/praktikum/update','PraktikumController@update');
+
+Route::get('/praktikum/hapus/{id}','PraktikumController@hapus');
+
+Route::get('/praktikum/cari','PraktikumController@cari');
+Route::get('/praktikum/view/{id}','PraktikumController@detail');
