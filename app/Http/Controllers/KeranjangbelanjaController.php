@@ -66,6 +66,14 @@ public function edit($id)
 	return view('keranjangbelanja.edit',['keranjangbelanja' => $keranjangbelanja]);
 
 }
+  // method untuk hapus data pendapatan
+  public function hapus($id)
+  {
+  // menghapus data pegawai berdasarkan id yang dipilih
+  DB::table('keranjangbelanja')->where('ID',$id)->delete();
 
+  // alihkan halaman ke halaman pegawai
+  return redirect('/keranjangbelanja');
+  }
 }
 
