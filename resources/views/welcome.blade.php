@@ -98,6 +98,7 @@
                     <a href="pegawai">Tugas Query (Pegawai)</a>
                     <a href="pendapatan">Tugas Query Builder</a>
                     <a href="absen">Absen</a>
+                    <a href="keranjang">UTS Keranjang Belanja</a>
                 </div>
             </div>
         </div>

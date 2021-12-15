@@ -73,6 +73,11 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Praktikum</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/keranjangbelanja">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Keranjang Belanja</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">

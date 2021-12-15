@@ -24,6 +24,11 @@
             <input type="submit" class="btn btn-primary mb-3" value="CARI">
         </form>
     </div>
+    <p  style="text-align: left">
+        Keterangan Status Tersedia: <br>
+        Y : tersedia <br>
+        N : tidak tersedia <br>
+    </p>
 
 	<table border="1" class="table table-striped">
     <thead>
@@ -54,11 +59,6 @@
 		@endforeach
 	</table>
     {{ $praktikum->links()}}
-    <p>
-        Keterangan Status Tersedia: <br>
-        Y : tersedia <br>
-        N : tidak tersedia <br>
-    </p>
 </div>
 
 @endsection
