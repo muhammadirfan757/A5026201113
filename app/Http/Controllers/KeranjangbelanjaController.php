@@ -57,5 +57,15 @@ public function update(Request $request)
 	// alihkan halaman ke halaman pegawai
 	return redirect('/keranjangbelanja');
 }
+// method untuk edit data praktikum
+public function edit($id)
+{
+	// mengambil data praktikum berdasarkan id yang dipilih
+	$keranjangbelanja = DB::table('keranjangbelanja')->where('ID',$id)->get();    ////////////
+	// passing data praktikum yang didapat ke view edit.blade.php
+	return view('keranjangbelanja.edit',['keranjangbelanja' => $keranjangbelanja]);
+
+}
+
 }
 

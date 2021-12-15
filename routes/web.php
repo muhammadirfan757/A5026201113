@@ -94,8 +94,8 @@ Route::get('/keranjangbelanja','KeranjangbelanjaController@index');
 Route::get('/keranjangbelanja/tambah','KeranjangbelanjaController@tambah');
 Route::post('/keranjangbelanja/store','KeranjangbelanjaController@store');
 
-// Route::get('/keranjangbelanja/edit/{id}','keranjangbelanjaController@edit');
-// Route::post('/keranjangbelanja/update','keranjangbelanjaController@update');
+Route::get('/keranjangbelanja/edit/{id}','KeranjangbelanjaController@edit');
+Route::post('/keranjangbelanja/update','KeranjangbelanjaController@update');
 
 Route::get('/keranjangbelanja/hapus/{id}','KeranjangbelanjaController@hapus');
 

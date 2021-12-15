@@ -40,7 +40,7 @@
 			<td class="isi-tabel">
 				<a href="/keranjangbelanja/hapus/{{ $k->ID }}">Hapus</a>
                 |
-                <a href="/keranjangbelanja/edit/{{ $k->ID }}">Edit</a>
+                <a href="/keranjangbelanja/edit/{{ $k->ID }}">Beli</a>
 			</td>
 		</tr>
 
